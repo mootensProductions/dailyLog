@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+        <script src="http://cdn.steemjs.com/lib/latest/steem.min.js"></script>
+        <script language="Javascript">
+            function postArticle()
+            {
+steem.broadcast.comment (
+document.getElementById('postingKey').value, //postig wif
+'', //author, leave blank for new post
+'steemtest', //first tag
+document.getElementById('username').value, //username
+'9737', //permlink
+document.getElementById('title').value, //body of post
+document.getElementById('article').value, //body of post
+//json metadata (additional tags, app name)
+    {tags: ['secondtag'], app: 'steemtest'},
+    function (err, result) {
+        if(err)
+            alert('Failure! ' + err);
+        else
+            alert('Success!');
+    }
+
+                );
+            }
+        
+        </script>
+    </head>
+    <body>
+        <h1>dailyLog    </h1>
+        Username: <input id="username" type="text"><br/>
+        Posting Key: <input id="postingKey" type="text"><br/>
+        Title of Article: <input id="title" type="text"><br/>
+        Article text: <br/>
+        <textarea id="article"></textarea><br/>
+        <input id="postIt" type="button" value="Post It!" onclick=postArticle()>
+    
+    </body>
+</html>
