@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"="text/css"/>
+    <script src="js/dailyLog.js"></script>
+    <script src="http://cdn.steemjs.com/lib/latest/steem.min.js"></script>
+</head>
+<body>
+    <div class=dailyLog>dailyLog</div>
+    <div class="poweredBySteem">powered by <a href="https://steemit.com/@mootens/">STEEM</a></div>
+        Username: <input id="username" type="text"><br/>
+        Posting Key: <input id="postingKey" type="text"><br/>
+        Title of Article: <input id="title" type="text"><br/>
+        <a href="http://www.daysold.com/" target="_blank">How Many Days old am I?</a>
+        Article text: <br/>
+        <textarea id="article"></textarea><br/>
+        <input id="postIt" type="button" value="Post It!" onclick=postArticle()>
+</body>
+</html>
