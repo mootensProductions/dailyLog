@@ -1,0 +1,17 @@
+* {
+
+}
+.dailyLog {
+    text-align: center;
+    font-size: 4em;
+}
+.poweredBySteem {
+    text-align: center;
+    font-size: 1em;
+}
+body {
+    text-align: center;
+}
+.partialPostingKey {
+    font-size: 0.3em;
+}
